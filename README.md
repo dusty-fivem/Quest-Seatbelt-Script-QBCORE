@@ -10,6 +10,7 @@ Open your server.lua file located in your resources\qb-core\server folder.
 
 Add the following code to the top of your server.lua file:
 `QBCore = nil
+
 TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)`
 This code will ensure that the QBCore object is available for use in the script.
 
