@@ -18,9 +18,9 @@ Add the following code to the bottom of your server.lua file:
     local xPlayer = QBCore.Functions.GetPlayer(source)
     local seatbeltStatus = xPlayer.get('seatbelt')
     cb(seatbeltStatus)
-end)
+end)`
 
-QBCore.Functions.CreateCallback('seatbelt:SetSeatbeltStatus', function(source, cb, status)
+`QBCore.Functions.CreateCallback('seatbelt:SetSeatbeltStatus', function(source, cb, status)
     local xPlayer = QBCore.Functions.GetPlayer(source)
     xPlayer.set('seatbelt', status)
     cb(true)
